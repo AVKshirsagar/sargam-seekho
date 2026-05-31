@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+dist-app/
+
+# Audio samples (large binary files - download via scripts/download-samples.sh)
+public/audio/*.wav
+public/audio/*.mp3
+public/audio/*.ogg
+
+# Electron
+out/
+
+# Dev
+.env
+.env.local
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

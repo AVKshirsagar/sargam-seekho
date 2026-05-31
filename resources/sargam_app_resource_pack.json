@@ -1,0 +1,622 @@
+{
+  "meta": {
+    "title": "Sargam Note Identification Game - Complete Resource Pack",
+    "description": "All data, frequencies, ragas, thaats, and Web Audio API reference for building an extensive Indian classical music learning app",
+    "generated": "2026-05-31T14:20:23.082Z",
+    "sources": [
+      "Wikipedia/Svara",
+      "Wikipedia/Thaat",
+      "MDN Web Audio API",
+      "github.com/hemanth/sa-ri-ga-ma"
+    ]
+  },
+  "sargamNotes": {
+    "description": "The 7 shuddha (pure) swaras with frequencies for Sa=240Hz base",
+    "madhyaSaptak": [
+      {
+        "sargam": "Sa",
+        "full": "Shadja",
+        "hindi": "सा",
+        "semitone": 0,
+        "western": "C",
+        "freq_Sa240": 240,
+        "freq_Sa261": 261.63,
+        "freq_ratio": "1/1",
+        "type": "achal",
+        "shruti": 4
+      },
+      {
+        "sargam": "Re",
+        "full": "Rishabha",
+        "hindi": "रे",
+        "semitone": 2,
+        "western": "D",
+        "freq_Sa240": 270,
+        "freq_Sa261": 293.66,
+        "freq_ratio": "9/8",
+        "type": "chal",
+        "shruti": 3
+      },
+      {
+        "sargam": "Ga",
+        "full": "Gandhara",
+        "hindi": "गा",
+        "semitone": 4,
+        "western": "E",
+        "freq_Sa240": 288,
+        "freq_Sa261": 329.63,
+        "freq_ratio": "5/4",
+        "type": "chal",
+        "shruti": 2
+      },
+      {
+        "sargam": "Ma",
+        "full": "Madhyama",
+        "hindi": "म",
+        "semitone": 5,
+        "western": "F",
+        "freq_Sa240": 320,
+        "freq_Sa261": 349.23,
+        "freq_ratio": "4/3",
+        "type": "chal",
+        "shruti": 4
+      },
+      {
+        "sargam": "Pa",
+        "full": "Panchama",
+        "hindi": "प",
+        "semitone": 7,
+        "western": "G",
+        "freq_Sa240": 360,
+        "freq_Sa261": 392,
+        "freq_ratio": "3/2",
+        "type": "achal",
+        "shruti": 4
+      },
+      {
+        "sargam": "Dha",
+        "full": "Dhaivata",
+        "hindi": "ध",
+        "semitone": 9,
+        "western": "A",
+        "freq_Sa240": 405,
+        "freq_Sa261": 440,
+        "freq_ratio": "5/3",
+        "type": "chal",
+        "shruti": 3
+      },
+      {
+        "sargam": "Ni",
+        "full": "Nishada",
+        "hindi": "नि",
+        "semitone": 11,
+        "western": "B",
+        "freq_Sa240": 432,
+        "freq_Sa261": 493.88,
+        "freq_ratio": "15/8",
+        "type": "chal",
+        "shruti": 2
+      }
+    ],
+    "threeOctaves": {
+      "mandraSaptak": {
+        "name": "Mandra (Low)",
+        "Sa": 120,
+        "Re": 135,
+        "Ga": 144,
+        "Ma": 160,
+        "Pa": 180,
+        "Dha": 202.5,
+        "Ni": 216
+      },
+      "madhyaSaptak": {
+        "name": "Madhya (Mid)",
+        "Sa": 240,
+        "Re": 270,
+        "Ga": 288,
+        "Ma": 320,
+        "Pa": 360,
+        "Dha": 405,
+        "Ni": 432
+      },
+      "taaraSaptak": {
+        "name": "Taara (High)",
+        "Sa": 480,
+        "Re": 540,
+        "Ga": 576,
+        "Ma": 640,
+        "Pa": 720,
+        "Dha": 810,
+        "Ni": 864
+      }
+    }
+  },
+  "allTwelveNotes": {
+    "description": "All 12 chromatic notes in Hindustani system with Sa=C base",
+    "notes": [
+      {
+        "semitone": 0,
+        "sargam": "Sa",
+        "variant": "shuddha",
+        "western": "C",
+        "freq_Sa240": 240
+      },
+      {
+        "semitone": 1,
+        "sargam": "komal Re",
+        "variant": "komal",
+        "western": "Db",
+        "freq_Sa240": 256
+      },
+      {
+        "semitone": 2,
+        "sargam": "Re",
+        "variant": "shuddha",
+        "western": "D",
+        "freq_Sa240": 270
+      },
+      {
+        "semitone": 3,
+        "sargam": "komal Ga",
+        "variant": "komal",
+        "western": "Eb",
+        "freq_Sa240": 288
+      },
+      {
+        "semitone": 4,
+        "sargam": "Ga",
+        "variant": "shuddha",
+        "western": "E",
+        "freq_Sa240": 300
+      },
+      {
+        "semitone": 5,
+        "sargam": "Ma",
+        "variant": "shuddha",
+        "western": "F",
+        "freq_Sa240": 320
+      },
+      {
+        "semitone": 6,
+        "sargam": "tivra Ma",
+        "variant": "tivra",
+        "western": "F#",
+        "freq_Sa240": 341.3
+      },
+      {
+        "semitone": 7,
+        "sargam": "Pa",
+        "variant": "shuddha",
+        "western": "G",
+        "freq_Sa240": 360
+      },
+      {
+        "semitone": 8,
+        "sargam": "komal Dha",
+        "variant": "komal",
+        "western": "Ab",
+        "freq_Sa240": 384
+      },
+      {
+        "semitone": 9,
+        "sargam": "Dha",
+        "variant": "shuddha",
+        "western": "A",
+        "freq_Sa240": 405
+      },
+      {
+        "semitone": 10,
+        "sargam": "komal Ni",
+        "variant": "komal",
+        "western": "Bb",
+        "freq_Sa240": 432
+      },
+      {
+        "semitone": 11,
+        "sargam": "Ni",
+        "variant": "shuddha",
+        "western": "B",
+        "freq_Sa240": 450
+      },
+      {
+        "semitone": 12,
+        "sargam": "Sa2",
+        "variant": "shuddha",
+        "western": "C5",
+        "freq_Sa240": 480
+      }
+    ]
+  },
+  "thaats": {
+    "description": "10 Bhatkhande thaats. Lowercase=komal, M'=tivra Ma",
+    "list": [
+      {
+        "name": "Bilaval",
+        "notes": "S R G M P D N",
+        "semitones": [
+          0,
+          2,
+          4,
+          5,
+          7,
+          9,
+          11
+        ],
+        "western": "Ionian (Major)",
+        "character": "All shuddha, bright, peaceful"
+      },
+      {
+        "name": "Kalyan",
+        "notes": "S R G M' P D N",
+        "semitones": [
+          0,
+          2,
+          4,
+          6,
+          7,
+          9,
+          11
+        ],
+        "western": "Lydian",
+        "character": "Tivra Ma, evening, devotional"
+      },
+      {
+        "name": "Khamaj",
+        "notes": "S R G M P D n",
+        "semitones": [
+          0,
+          2,
+          4,
+          5,
+          7,
+          9,
+          10
+        ],
+        "western": "Mixolydian",
+        "character": "Komal Ni, light classical, thumri"
+      },
+      {
+        "name": "Bhairav",
+        "notes": "S r G M P d N",
+        "semitones": [
+          0,
+          1,
+          4,
+          5,
+          7,
+          8,
+          11
+        ],
+        "western": "Double Harmonic",
+        "character": "Komal Re+Dha, morning, meditative"
+      },
+      {
+        "name": "Kafi",
+        "notes": "S R g M P D n",
+        "semitones": [
+          0,
+          2,
+          3,
+          5,
+          7,
+          9,
+          10
+        ],
+        "western": "Dorian",
+        "character": "Komal Ga+Ni, devotional, Holi"
+      },
+      {
+        "name": "Asavari",
+        "notes": "S R g M P d n",
+        "semitones": [
+          0,
+          2,
+          3,
+          5,
+          7,
+          8,
+          10
+        ],
+        "western": "Aeolian (Nat. Minor)",
+        "character": "Komal Ga+Dha+Ni, morning, pathos"
+      },
+      {
+        "name": "Bhairavi",
+        "notes": "S r g M P d n",
+        "semitones": [
+          0,
+          1,
+          3,
+          5,
+          7,
+          8,
+          10
+        ],
+        "western": "Phrygian",
+        "character": "4 komal notes, valedictory"
+      },
+      {
+        "name": "Poorvi",
+        "notes": "S r G M' P d N",
+        "semitones": [
+          0,
+          1,
+          4,
+          6,
+          7,
+          8,
+          11
+        ],
+        "western": "Double Harmonic #4",
+        "character": "Tivra Ma+Komal Re+Dha, twilight"
+      },
+      {
+        "name": "Marva",
+        "notes": "S r G M' P D N",
+        "semitones": [
+          0,
+          1,
+          4,
+          6,
+          7,
+          9,
+          11
+        ],
+        "western": "Lydian b2",
+        "character": "Tivra Ma+Komal Re, evening, restless"
+      },
+      {
+        "name": "Todi",
+        "notes": "S r g M' P d N",
+        "semitones": [
+          0,
+          1,
+          3,
+          6,
+          7,
+          8,
+          11
+        ],
+        "western": "Phrygian #4 #7",
+        "character": "Tivra Ma+3 komal, morning, introspective"
+      }
+    ]
+  },
+  "popularRagas": [
+    {
+      "name": "Yaman",
+      "thaat": "Kalyan",
+      "time": "Evening",
+      "notes": "S R G M' P D N",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Bhupali",
+      "thaat": "Kalyan",
+      "time": "Evening",
+      "notes": "S R G P D",
+      "difficulty": "beginner",
+      "type": "pentatonic"
+    },
+    {
+      "name": "Durga",
+      "thaat": "Bilaval",
+      "time": "Any",
+      "notes": "S R M P D",
+      "difficulty": "beginner",
+      "type": "pentatonic"
+    },
+    {
+      "name": "Bilaval",
+      "thaat": "Bilaval",
+      "time": "Morning",
+      "notes": "S R G M P D N",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Kafi",
+      "thaat": "Kafi",
+      "time": "Midnight",
+      "notes": "S R g M P D n",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Bhairav",
+      "thaat": "Bhairav",
+      "time": "Dawn",
+      "notes": "S r G M P d N",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Bhairavi",
+      "thaat": "Bhairavi",
+      "time": "Morning",
+      "notes": "S r g M P d n",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Khamaj",
+      "thaat": "Khamaj",
+      "time": "Night",
+      "notes": "S R G M P D n",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Darbari Kanada",
+      "thaat": "Asavari",
+      "time": "Midnight",
+      "notes": "S R g M P d n",
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Malkauns",
+      "thaat": "Bhairavi",
+      "time": "Midnight",
+      "notes": "S g M d n",
+      "difficulty": "advanced",
+      "type": "pentatonic"
+    },
+    {
+      "name": "Todi",
+      "thaat": "Todi",
+      "time": "Morning",
+      "notes": "S r g M' P d N",
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Marwa",
+      "thaat": "Marva",
+      "time": "Sunset",
+      "notes": "S r G M' D N",
+      "difficulty": "advanced"
+    }
+  ],
+  "frequencyUtils": {
+    "formula_equalTemp": "freq = baseSaHz * 2^(semitones/12)",
+    "formula_justIntonation": "freq = baseSaHz * ratio",
+    "justIntonationRatios": {
+      "Sa": "1/1",
+      "komal Re": "16/15",
+      "Re": "9/8",
+      "komal Ga": "6/5",
+      "Ga": "5/4",
+      "Ma": "4/3",
+      "tivra Ma": "45/32",
+      "Pa": "3/2",
+      "komal Dha": "8/5",
+      "Dha": "5/3",
+      "komal Ni": "9/5",
+      "Ni": "15/8",
+      "Sa2": "2/1"
+    },
+    "jsFunction": "function noteFreq(baseSa, semitones){return baseSa * Math.pow(2, semitones/12);}"
+  },
+  "webAudioAPI": {
+    "source": "MDN Web Docs - developer.mozilla.org",
+    "workflow": [
+      "1.new AudioContext()",
+      "2.createOscillator()",
+      "3.createGain()",
+      "4.osc.connect(gain).connect(ctx.destination)",
+      "5.osc.start()/stop()"
+    ],
+    "nodes": {
+      "OscillatorNode": "Tone generator. Types: sine|square|sawtooth|triangle",
+      "GainNode": "Volume. gain.value 0-1",
+      "BiquadFilterNode": "Filter. Types: lowpass|highpass|bandpass",
+      "AnalyserNode": "Visualisation - FFT data",
+      "ConvolverNode": "Reverb effect",
+      "StereoPannerNode": "Pan L/R. value -1 to 1",
+      "DelayNode": "Echo/delay",
+      "AudioBuffer": "Load and play audio files"
+    },
+    "envelopePattern": "gain.setValueAtTime(0,t); gain.linearRampToValueAtTime(0.7,t+0.05); gain.linearRampToValueAtTime(0,t+dur);",
+    "libraries": {
+      "Tone.js": {
+        "npm": "npm install tone",
+        "url": "https://tonejs.github.io",
+        "desc": "Full music framework, scheduler, synths"
+      },
+      "howler.js": {
+        "npm": "npm install howler",
+        "url": "https://howlerjs.com",
+        "desc": "Audio lib with mp3 fallback"
+      }
+    }
+  },
+  "keyboardMap": {
+    "s": "Sa",
+    "r": "Re",
+    "g": "Ga",
+    "m": "Ma",
+    "p": "Pa",
+    "d": "Dha",
+    "n": "Ni",
+    "S": "Sa2",
+    "R": "komal Re",
+    "G": "komal Ga",
+    "D": "komal Dha",
+    "N": "komal Ni",
+    "M": "tivra Ma"
+  },
+  "culturalSymbolism": {
+    "animals": {
+      "Sa": "Peacock",
+      "Re": "Bull",
+      "Ga": "Goat",
+      "Ma": "Heron",
+      "Pa": "Cuckoo",
+      "Dha": "Horse",
+      "Ni": "Elephant"
+    },
+    "planets": {
+      "Sa": "Mercury",
+      "Re": "Mars",
+      "Ga": "Sun",
+      "Ma": "Moon",
+      "Pa": "Saturn",
+      "Dha": "Jupiter",
+      "Ni": "Venus"
+    },
+    "colours": {
+      "Sa": "Green",
+      "Re": "Red",
+      "Ga": "Golden",
+      "Ma": "White",
+      "Pa": "Blue/Black",
+      "Dha": "Yellow",
+      "Ni": "Multi-coloured"
+    },
+    "chakras": {
+      "Sa": "Muladhara",
+      "Re": "Svadhisthana",
+      "Ga": "Manipura",
+      "Ma": "Anahata",
+      "Pa": "Vishuddhi",
+      "Dha": "Ajna",
+      "Ni": "Sahasrara"
+    }
+  },
+  "gameModes": [
+    {
+      "mode": "Note Identification",
+      "desc": "Hear a note, click its name. Multiple choice.",
+      "level": "beginner"
+    },
+    {
+      "mode": "Komal/Tivra Recognition",
+      "desc": "Is this note shuddha, komal or tivra?",
+      "level": "beginner"
+    },
+    {
+      "mode": "Thaat Quiz",
+      "desc": "Hear a scale, identify the thaat.",
+      "level": "intermediate"
+    },
+    {
+      "mode": "Raga Builder",
+      "desc": "Pick correct notes to build a raga from its thaat.",
+      "level": "intermediate"
+    },
+    {
+      "mode": "Saptak Navigation",
+      "desc": "Navigate Mandra, Madhya, Taara octave notes.",
+      "level": "intermediate"
+    },
+    {
+      "mode": "Interval Training",
+      "desc": "Hear two notes, identify the interval.",
+      "level": "advanced"
+    },
+    {
+      "mode": "Raga Identification",
+      "desc": "Hear a snippet, name the raga.",
+      "level": "advanced"
+    },
+    {
+      "mode": "Speed Challenge",
+      "desc": "Timed note identification challenge.",
+      "level": "any"
+    }
+  ]
+}
