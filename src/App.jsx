@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getStage } from './store/progression';
 import { registerKeyHandler } from './utils/keyboard';
-import { playNote } from './audio/engine';
+import { playNote, samplerLoaded } from './audio/engine';
 import { getStageNotes } from './data/stages';
 import StageMap from './components/ui/StageMap';
 import TanpuraDrone from './components/ui/TanpuraDrone';
@@ -25,6 +25,11 @@ export default function App() {
   const [screen, setScreen] = useState('map'); // 'map' | 'play'
   const [stage, setStage] = useState(getStage());
   const [mode, setMode] = useState('hear');
+  const [audioReady, setAudioReady] = useState(false);
+
+  useEffect(() => {
+    samplerLoaded.then(() => setAudioReady(true)).catch(() => setAudioReady(true));
+  }, []);
 
   useEffect(() => {
     const stageNotes = getStageNotes(stage);
@@ -34,6 +39,19 @@ export default function App() {
     });
     return cleanup;
   }, [stage]);
+
+  if (!audioReady) {
+    return (
+      <div className="loading-screen">
+        <div className="loading-screen__inner">
+          <div className="loading-screen__emoji">🎵</div>
+          <h1>Sargam Seekho</h1>
+          <p>Loading harmonium samples…</p>
+          <div className="loading-bar"><div className="loading-bar__fill" /></div>
+        </div>
+      </div>
+    );
+  }
 
   function handleSelectStage(stageNum) {
     setStage(stageNum);
